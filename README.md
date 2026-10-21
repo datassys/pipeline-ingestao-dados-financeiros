@@ -5,14 +5,14 @@
 ![Git](https://img.shields.io/badge/Git-GitHub-F05032?style=for-the-badge&logo=git&logoColor=white)
 ![Pandas](https://img.shields.io/badge/Pandas-ETL-150458?style=for-the-badge&logo=pandas&logoColor=white)
 
-## 📌 Visão Geral do Projeto
+## Visão Geral do Projeto
 Este projeto consiste em um pipeline automatizado de Engenharia de Dados focado na extração, tratamento e carga do histórico da **Taxa SELIC acumulada no mês**, disponibilizado via API REST pública do Banco Central do Brasil. 
 
 Os dados brutos são ingeridos em Python, padronizados no ecossistema Pandas e persistidos em uma instância analítica do **PostgreSQL hospedada na nuvem (Supabase)**. Na camada de consumo, são disponibilizadas consultas SQL avançadas utilizando **Window Functions** e **CTEs** para análise temporal de juros.
 
 ---
 
-## 🏗️ Arquitetura da Solução
+## Arquitetura da Solução
 ```text
 +-------------------------+
 |   API REST              |
@@ -41,7 +41,7 @@ Os dados brutos são ingeridos em Python, padronizados no ecossistema Pandas e p
 |   - CTEs & Ranking      |
 +-------------------------+
 ```
-## 🛠️ Tecnologias e Ferramentas
+## Tecnologias e Ferramentas
 * **Linguagem:** Python 3.10+
 * **Extração & Transformação (ETL):** requests, pandas, sqlalchemy, psycopg
 * **Armazenamento / Data Warehouse:** PostgreSQL (Supabase Cloud)
@@ -50,7 +50,7 @@ Os dados brutos são ingeridos em Python, padronizados no ecossistema Pandas e p
 
 ---
 
-## 📖 Dicionário de Dados (tb_taxa_selic)
+## Dicionário de Dados (tb_taxa_selic)
 
 | Nome do Campo | Tipo de Dado | Descrição | Exemplo de Conteúdo |
 | :--- | :--- | :--- | :--- |
@@ -60,7 +60,7 @@ Os dados brutos são ingeridos em Python, padronizados no ecossistema Pandas e p
 
 ---
 
-## 🔍 Consultas Analíticas (SQL Avançado)
+## Consultas Analíticas (SQL Avançado)
 
 O projeto disponibiliza queries focadas em extrair inteligência da série temporal (arquivo queries_analiticas.sql):
 
@@ -70,7 +70,7 @@ O projeto disponibiliza queries focadas em extrair inteligência da série tempo
 
 ---
 
-## 🚀 Como Executar o Projeto Localmente
+## Como Executar o Projeto Localmente
 
 ### Pré-requisitos
 * Python 3.10+ instalado.
